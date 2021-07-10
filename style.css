@@ -1,0 +1,73 @@
+body{
+    background-image: url(./bgscroll.png);    
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: 1980px 100%;      
+    background-color: #464646; 
+}
+.thumb img  {
+    margin-right: 500px; /* Отступ справа */
+    margin-bottom: 20px; /* Отступ снизу */
+   }
+.skills {
+    position: absolute;
+    right: 500px;
+    /*left: 0; */
+    top: 200px ;
+}
+.stat{
+    position: fixed;
+    right: 10%;
+    /*left: 0; */
+    top: 15% ;
+    z-index: 1;
+}
+.navigation{
+    position: fixed;
+    right: 9.9%;
+    /*left: 0; */
+    top: 14.5% ;
+    z-index: 2;
+}
+
+.arrow img{
+    margin-right: 385px; /* Отступ справа */
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: rgba(39, 39, 39, 0.692);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(39, 39, 39, 0.692) transparent transparent;
+}
